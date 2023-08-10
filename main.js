@@ -14,6 +14,7 @@ form.addEventListener('submit', function(e) {
     const mensagemErro = `O valor do segundo depósito deve ser maior que o primeiro!`;
 
     formValida = validar(valorOne, valorTwo)
+    
     if (formValida) {
         const containerMensagemSucesso = document.querySelector('.success-mesage');
         containerMensagemSucesso.innerHTML = mensagemSucesso;
