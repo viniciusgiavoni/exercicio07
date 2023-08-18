@@ -1,12 +1,12 @@
 const form = document.getElementById('form-valida');
-const valorOne = Number(document.getElementById('valor-one'));
-const valorTwo = Number(document.getElementById('valor-two'));
 
 function validar(valorOne, valorTwo) {
-    return valorTwo > valorOne;
+return valorTwo > valorOne;
 }
 
 form.addEventListener('submit', function(e) {
+    const valorOne = Number(document.getElementById('valor-one').value);
+    const valorTwo = Number(document.getElementById('valor-two').value);
     let formValida
     e.preventDefault();
 
